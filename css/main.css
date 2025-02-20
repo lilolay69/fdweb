@@ -41,6 +41,7 @@ h2{
 }
 
 h3{
+    background-color: aqua;
     color: rgb(255, 0, 0);
     font-family: fantasy;
     text-align: center;
