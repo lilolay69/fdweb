@@ -1,7 +1,7 @@
 /* Estilos básicos */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ff0000;
+  background-color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -13,8 +13,6 @@ p{
   font-style: normal;
 
 }
-h1,
-h2,
 h3 {
   color: #ffffff;
 }
@@ -24,36 +22,84 @@ section {
 }
 
 #inicio {
-  font-size: larger;
+  font-size: medium;
 }
 
 .emphasis {
   text-align: center;
 }
 
-h1 {
-  color: rgb(255, 238, 0);
-  font-family: fantasy;
-  text-align: center;
-  letter-spacing: 5rem;
-  font-size: 9rem;
+@font-face {
+  font-family: 'OCR-A';
+  src: url('../assets/tipografia/OCRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  }
+ 
+
+
+  
+@keyframes colorCycle {
+	0% {
+		color: red;
+	}
+	33% {
+		color: rgb(238, 255, 0);
+	}
+	66% {
+		color: rgb(0, 255, 0);
+	}
+	100% {
+		color: rgb(255, 255, 255);
+	}
 }
 
-h2 {
-  color: rgb(0, 255, 42);
-  font-family: fantasy;
-  text-align: center;
-  letter-spacing: 5rem;
-  font-size: 9rem;
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.barlow-semi-condensed-regular {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h3 {
-  background-color: aqua;
+  animation: fadeIn 2s ease-in-out 1 forwards;
+}
+
+h1 {
+  animation: colorCycle 1s linear infinite;
+}
+
+h1 {
   color: rgb(255, 0, 0);
-  font-family: fantasy;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   letter-spacing: 5rem;
-  font-size: 9rem;
+  font-size: 3rem;
+}
+
+h2 {
+  animation: colorCycle 1s linear infinite;
+  font-family: 'OCR-A';
+  color: rgb(0, 255, 42);
+  text-align: center;
+  letter-spacing: 5rem;
+  font-size: 3rem;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 1rem;
 }
 
 h4 {
