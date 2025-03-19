@@ -14,11 +14,11 @@ p{
 
 }
 h3 {
-  color: #ffffff;
+  color: #000000;
 }
 
 section {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 #inicio {
@@ -69,8 +69,13 @@ section {
   font-style: normal;
 }
 
-h3 {
-  animation: fadeIn 2s ease-in-out 1 forwards;
+h2:before {
+	content: '🔥';
+}
+
+h3:hover {
+	background-color: #000000;
+	color: rgb(255, 0, 0);
 }
 
 h1 {
@@ -95,17 +100,12 @@ h2 {
 }
 
 h3 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   letter-spacing: 1rem;
   font-size: 1rem;
 }
-
-h4 {
-  color: #ffffff;
-}
-
 .flex-container {
   display: flex;
   flex-direction: column-reverse;
