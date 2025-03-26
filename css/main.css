@@ -1,10 +1,12 @@
 /* Estilos básicos */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: var(--background);
+  }  
 
 p{
   font-family: "Outfit", sans-serif;
