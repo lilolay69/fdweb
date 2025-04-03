@@ -2,3 +2,4 @@
 @import url('base.css');
 @import url('theme.css');
 @import url('main.css'); /* Estilos principales */
+@import url('root.css')
