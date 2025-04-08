@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(168, 242, 252);
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem; /* Tamaño de texto por defecto */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f5aff;
+    padding: 1rem;
+    position: fixed; /* Esto hace que el header se quede fijo en la parte superior */
+    top: 0; /* Fija el header en la parte superior */
+    left: 0;
+    width: 100%; /* Hace que el header ocupe todo el ancho */
+    z-index: 1000; /* Se asegura de que el header esté por encima de otros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para darle un efecto visual */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+h2 {
+    v
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 1.1rem; /* Reducir tamaño de texto en pantallas medianas */
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 1rem; /* Reducir tamaño de texto en pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Aumentar el tamaño de texto en pantallas más pequeñas */
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.85rem; /* Ajustar tamaño de texto para dispositivos pequeños */
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    nav ul li a {
+        padding: 8px 15px;
+    }
+
+    section {
+        margin-top: 30px;
+    }
+}

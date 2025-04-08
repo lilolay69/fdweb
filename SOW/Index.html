@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Interactivo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#web1">Web1</a></li>
+                <li><a href="#web2">Web2</a></li>
+                <li><a href="#web3">Web3</a></li>
+                <li><a href="#web4">Web4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Analisis de Lucía Sanz</h2>
+            <p>Este es el contenido de la práctica.</p>
+        </section>
+        <section id="web1">
+            <div class="iframe-container">
+                <iframe src="https://exat.hottype.co/" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <style>
+                .iframe-container {
+                    position: relative;
+                    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                }
+                .iframe-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+            <h2>Contenido Web1</h2>
+            <p>Este es el contenido de Web1.</p>
+        </section>
+        <section id="web2">
+            <h2>Contenido Web2</h2>
+            <p>Este es el contenido de Web2.</p>
+        </section>
+        <section id="web3">
+            <h2>Contenido Web3</h2>
+            <p>Este es el contenido de Web3.</p>
+        </section>
+        <section id="web4">
+            <h2>Contenido Web4</h2>
+            <p>Este es el contenido de Web4.</p>
+        </section>
+    </main>
+</body>
+</html>
