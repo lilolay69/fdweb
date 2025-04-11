@@ -22,25 +22,72 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para darle un efecto visual */
 }
 
-.iframe-container {
-    position: relative;
-    width:80%;
-    max-width: 600px;
-    padding-bottom: 45%; /* Relación de aspecto 16:9 */
-    height: 0;
-    margin: 0 auto;
-    overflow: hidden;
+hr {
+    border: none; /* Elimina el borde predeterminado */
+    height: 2px; /* Define el grosor de la línea */
+    background-color: #1f5aff; /* Cambia el color de la línea */
+    margin: 20px 0; /* Añade espacio arriba y abajo */
 }
+
+h1 {
+    text-align: right;
+    color: #000000;
+    position: relative;
+    top: 70%;
+    left: 250%;
+    font-size: 9rem;
+}
+
+h2 {
+    text-align: center;
+    color: #1f5aff;
+}
+#inicio {
+    position: relative; 
+}
+
+.inicio-imagen {
+    width: 100%; 
+    height: auto;
+}
+
+.inicio-texto {
+    position: absolute; 
+    color: white; 
+    text-align:left;  
+}
+
+
+/* Contenedor principal para iframe y texto */
+.web-contenedor {
+    display: flex; /* Organiza el iframe y el texto en una fila */
+    align-items: flex-start; /* Alinea el contenido verticalmente al inicio */
+    gap: 20px; /* Espaciado entre el iframe y el texto */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+}
+
+/* Estilo del iframe */
+.iframe-container {
+    width: 100%; /* El contenedor ocupa todo el ancho de la pantalla */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+    
 
 .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0%;
+    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+    height: 500px; /* Ajusta la altura del iframe */
+    border: none; /* Elimina el borde del iframe */
 }
 
+
+/* Estilo del texto */
+.web-texto {
+    flex: 1; /* El texto ocupará 1/3 del espacio disponible */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina márgenes adicionales */
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -141,7 +188,7 @@ p {
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 0.85rem; /* Ajustar tamaño de texto para dispositivos pequeños */
+        font-size: 0.85rem;
     }
 
     h2 {
@@ -156,3 +203,9 @@ p {
         margin-top: 30px;
     }
 }
+
+.yo {
+    width: 100%; 
+    height: auto; 
+    display: block;
+ }
