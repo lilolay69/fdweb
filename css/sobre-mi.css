@@ -1,0 +1,79 @@
+.menu {
+    position: fixed; /* Hace que el menú sea fijo */
+    top: 0; /* Fija el menú en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: white; /* Fondo blanco */
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espaciado entre los elementos del menú */
+    padding: 1rem 0; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar el menú */
+}
+
+.menu-item {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 300; /* Light */
+    font-size: 1.2rem; /* Tamaño del texto */
+    text-decoration: none; /* Sin subrayado */
+    color: black; /* Color del texto */
+    transition: color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.menu-item:hover {
+    color: gray; /* Cambia el color al pasar el cursor */
+}
+
+.menu-item.inicio {
+    color: red; /* La palabra "Inicio" en rojo */
+    font-weight: bold; /* Destaca el texto */
+}
+
+.intro-section {
+    margin-top: 5rem; /* Espaciado para evitar que el contenido quede debajo del menú */
+    padding: 2rem;
+}
+
+.intro-text {
+  background-color: rgb(255, 255, 255); /* Fondo negro */
+  color: rgb(0, 0, 0); /* Texto blanco */
+  padding: 2rem; /* Espaciado interno */
+  max-width: 90%; /* Limita el ancho del texto */
+  margin: 0 auto 2rem; /* Centra el texto y agrega espacio inferior */
+  font-family: "Cal Sans", sans-serif;
+  font-size: 1rem; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  text-align: justify; /* Justifica el texto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacar el texto */
+  column-count: 2; /* Divide el texto en dos columnas */
+  column-gap: 2rem; /* Espaciado entre las columnas */
+}
+
+.footer {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el contenido */
+    padding: 1rem 0; /* Espaciado interno */
+    margin-top: 2rem; /* Espaciado superior */
+}
+
+.footer-link {
+    color: white; /* Color del enlace */
+    text-decoration: underline; /* Subrayado para destacar el enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.footer-link:hover {
+    color: gray; /* Cambia el color al pasar el cursor */
+}
+
+.single-image {
+  display: block;
+  max-width: 30%; /* Imagen individual más pequeña */
+  margin: 0 auto 2rem; /* Centrada y con espacio inferior */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

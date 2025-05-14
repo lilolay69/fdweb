@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: "Cal Sans", sans-serif;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
+
+.menu {
+ position: fixed; /* Hace que el menú sea fijo */
+  top: 0; /* Fija el menú en la parte superior */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  background-color: white; /* Fondo blanco para que sea visible */
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Más espacio entre los elementos del menú */
+  padding: 1rem 0; /* Espaciado interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar el menú */
+}
+.menu-item:first-child {
+  color: red; /* Cambia el color del enlace "Inicio" a rojo */
+  font-weight: bold; /* Opcional: hace que el texto sea más destacado */
+}
+
+.menu-item {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 1.4rem; /* Tamaño más grande */
+  text-decoration: none;
+  color: black;
+  transition: border-color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid black; /* Subrayado visible al pasar el cursor */
+}
+
+section {
+  margin-bottom: 4rem; /* Mayor separación entre secciones */
+}
+
+section h2 {
+  font-size: 2.5rem; /* Títulos más grandes */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.youtube-link {
+  display: block; /* Hace que el enlace ocupe toda la línea */
+  text-align: center; /* Centra el texto dentro del bloque */
+  color: brown; /* Color del enlace */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  margin: 1rem 0; /* Espaciado superior e inferior */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.youtube-link:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+.description {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0 2rem; /* Más espacio debajo del texto */
+  color: #333; /* Color gris oscuro */
+}
+
+.single-image {
+  display: block;
+  max-width: 30%; /* Imagen individual más pequeña */
+  margin: 0 auto 2rem; /* Centrada y con espacio inferior */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columnas dinámicas */
+  gap: 20px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra las columnas horizontalmente */
+  align-items: center; /* Centra las filas verticalmente (opcional) */
+  margin: 0 auto; /* Centra el grid dentro de su contenedor */
+  max-width: 1200px; /* Limita el ancho máximo del grid */
+}
+
+.masonry-grid img {
+  width: 100%; /* Las imágenes ocupan todo el ancho de su celda */
+  height: auto; /* Mantienen su proporción */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+}
+
+.footer {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el contenido */
+    padding: 1rem 0; /* Espaciado interno */
+    margin-top: 2rem; /* Espaciado superior */
+}
+
+.footer-link {
+    color: white; /* Color del enlace */
+    text-decoration: underline; /* Subrayado para destacar el enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.footer-link:hover {
+    color: gray; /* Cambia el color al pasar el cursor */
+}

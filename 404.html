@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
+    <title>404 - Página No Encontrada</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
         body {
             margin: 0;
-            font-family:'Courier New', Courier, monospace;
-            background-color: rgb(255, 255, 255);
-            color: black;
+            font-family: 'Cal Sans', sans-serif; /* Tipografía actualizada */
+            background-color: #f8f8f8; /* Fondo claro */
+            color: #333; /* Texto en gris oscuro */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -17,37 +19,40 @@
             height: 100vh;
             text-align: center;
         }
-        h1 {
 
+        h1 {
             font-size: 4rem;
             margin: 1rem 0 0.5rem;
+            color: #ff0000; /* Rojo para destacar el error */
         }
+
         p {
-            font-family:'Courier New', Courier, monospace;
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin: 0.5rem 0;
-            font-weight: bold;
+            font-weight: 400;
         }
+
         a {
-            color: rgb(255, 0, 0);
+            color: #ff0000; /* Rojo para el enlace */
             text-decoration: none;
-            font-weight: lighter;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         img {
-            max-width: 70%;
+            max-width: 50%; /* Ajusta el tamaño de la imagen */
             height: auto;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
-    <p>&nbsp;</p>  
-    <p>PAGINA NO ENCONTRADA</p>
-    <p><a href="/">Go Back Home</a></p>
-    <img src="https://ik.imagekit.io/luciasanz/Lab_Valen.gif?updatedAt=1746708009795" alt="404 GIF"> 
-    
+    <p>Página no encontrada</p>
+    <p><a href="index.html">Volver al Inicio</a></p>
+    <img src="https://ik.imagekit.io/luciasanz/Lab_Valen%202.gif?updatedAt=1747141266735" alt="404 GIF"> 
 </body>
 </html>
